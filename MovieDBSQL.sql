@@ -212,3 +212,23 @@ VALUES (1, 2, 10),
 	   (5, 4, 10),
 	   (5, 3, 6.5),
 	   (6, 5, 9);
+	   
+INSERT INTO COMMENTS
+VALUES (3, 2, 'A dark and visually stunning movie that asks what it means to be human and to have free will.'),
+	   (4, 2, 'UNICORN!'),
+	   (1, 2, 'Great ending monologue. ‘All those moments will be lost in time, like tears in rain.'),
+	   (5, 2, 'Can’t believe Atari is still around in 2019.'),
+	   (2, 2, 'Snooze fest.'),
+	   (2, 2, 'Fuck Harrison Ford. He is a dick.'),
+           (4, 3, 'ARE YOU NOT ENTERTAINED!'),
+	   (2, 3, 'Commodus died like a little bitch.'),
+	   (1, 3, 'A thoroughly enjoyable movie.'),
+	   (3, 3, 'This is one of Russel Crowe’s best performances.'),
+	   (1, 4, 'This movie is a modern classic war movie.'),
+       	   (4, 4, 'I didn’t know that Legolas was in this movie.'),
+	   (4, 4, 'Or that Bane was in this movie.'),
+	   (5, 4, 'Who wasn’t in this movie?'),
+	   (1, 5, 'This movie will haunt my dreams til the day I die.'),
+	   (4, 5, 'I still get freaked out when the chestburster scene plays.'),
+	   (5, 5, 'Sigourney Weaver is super hot!!!!'),
+	   (3, 5, 'The new Alien movie are not as good as these old ones.');
