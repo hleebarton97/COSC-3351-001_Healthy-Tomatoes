@@ -69,6 +69,8 @@
     <Content Include="assets\css\font-awesome.min.css" />
     <Content Include="assets\css\ie8.css" />
     <Content Include="assets\css\ie9.css" />
+    <Content Include="assets\css\index.css" />
+    <Content Include="assets\css\login.css" />
     <Content Include="assets\css\main.css" />
     <Content Include="assets\fonts\fontawesome-webfont.svg" />
     <Content Include="assets\js\ie\html5shiv.js" />
@@ -78,21 +80,11 @@
     <Content Include="assets\js\skel.min.js" />
     <Content Include="assets\js\util.js" />
     <Content Include="HealthyTomatoes.Master" />
-    <Content Include="images\avatar.jpg" />
+    <Content Include="images\alien.jpg" />
+    <Content Include="images\black_hawk_down.jpg" />
+    <Content Include="images\blade_runner.jpg" />
+    <Content Include="images\gladiator.jpg" />
     <Content Include="images\logo.png" />
-    <Content Include="images\pic01.jpg" />
-    <Content Include="images\pic02.jpg" />
-    <Content Include="images\pic03.jpg" />
-    <Content Include="images\pic04.jpg" />
-    <Content Include="images\pic05.jpg" />
-    <Content Include="images\pic06.jpg" />
-    <Content Include="images\pic07.jpg" />
-    <Content Include="images\pic08.jpg" />
-    <Content Include="images\pic09.jpg" />
-    <Content Include="images\pic10.jpg" />
-    <Content Include="images\pic11.jpg" />
-    <Content Include="images\pic12.jpg" />
-    <Content Include="Index.aspx" />
     <Content Include="assets\fonts\fontawesome-webfont.eot" />
     <Content Include="assets\fonts\fontawesome-webfont.ttf" />
     <Content Include="assets\fonts\fontawesome-webfont.woff" />
@@ -126,6 +118,12 @@
     <Content Include="assets\sass\libs\_skel.scss" />
     <Content Include="assets\sass\libs\_vars.scss" />
     <Content Include="assets\sass\main.scss" />
+    <Content Include="index.aspx" />
+    <Content Include="login.aspx" />
+    <Content Include="signup.aspx" />
+    <Content Include="movies.aspx" />
+    <Content Include="rate.aspx" />
+    <Content Include="UserHomePage.aspx" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -146,12 +144,47 @@
       <DependentUpon>HealthyTomatoes.Master</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Index.aspx.cs">
-      <DependentUpon>Index.aspx</DependentUpon>
+    <Compile Include="index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Index.aspx.designer.cs">
-      <DependentUpon>Index.aspx</DependentUpon>
+    <Compile Include="index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="login.aspx.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="login.aspx.designer.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="signup.aspx.cs">
+      <DependentUpon>signup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="signup.aspx.designer.cs">
+      <DependentUpon>signup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="movies.aspx.cs">
+      <DependentUpon>movies.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="movies.aspx.designer.cs">
+      <DependentUpon>movies.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="rate.aspx.cs">
+      <DependentUpon>rate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="rate.aspx.designer.cs">
+      <DependentUpon>rate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserHomePage.aspx.cs">
+      <DependentUpon>UserHomePage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserHomePage.aspx.designer.cs">
+      <DependentUpon>UserHomePage.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <PropertyGroup>

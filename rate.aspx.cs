@@ -4,9 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
-using System.Data;
-using System.Configuration;
-using System.Data.SqlClient;
+
 namespace HealthyTomatoes
 {
     public partial class rate : System.Web.UI.Page
@@ -14,11 +12,11 @@ namespace HealthyTomatoes
         protected void Page_Load(object sender, EventArgs e)
         {
             string username = (String)Session["Username"];
-            string movie_id = (String)Session["MovieId"];
 
             string movie_title = (String)Session["MovieTitle"];
             string movie_rating = (String)Session["MovieRating"];
             string movie_img_src = (String)Session["MovieImgSrc"];
+
 
             Boolean loggedIn = false;
 
@@ -54,29 +52,6 @@ namespace HealthyTomatoes
                 lbl_movieTitle.Visible = false;
                 lbl_movieRatings.Visible = false;
                 lbl_rate.Visible = false;
-            }
-        }
-
-        protected void DropDownList1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            string rating = DropDownList1.SelectedValue;
-            int usrRating = Convert.ToInt32(rating);
-            string insertRating = "UPDATE RATINGS SET rating = " + rating + " WHERE m_id = " + (String)Session["MovieId"] + ";";
-            SqlConnection db = new SqlConnection(SqlDataSource1.ConnectionString);
-            SqlCommand cmd = new SqlCommand();
-            db.Open();
-            try
-            {
-                cmd.CommandType = CommandType.Text;
-                cmd.CommandText = insertRating;
-                cmd.Connection = db;
-                cmd.ExecuteNonQuery();
-                Response.Redirect("/rate.aspx");
-            }
-
-            catch (Exception exception)
-            {
-                lbl_movieRatings.Text = exception.ToString();
             }
         }
     }

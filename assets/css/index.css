@@ -1,0 +1,14 @@
+﻿a:link { text-decoration: none; }
+
+.movieContainer {
+    display: table;
+    margin: 0 auto;
+}
+
+.title {
+    text-align: center;
+}
+
+.header {
+    text-align: center;
+}
